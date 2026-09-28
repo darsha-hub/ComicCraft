@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>ComicCraft</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/css/style.css"
+    >
+
+</head>
+
+<body>
+
+<main class="container">
+
+    <section class="hero">
+
+        <span class="badge">
+            AI COMIC CREATOR
+        </span>
+
+        <h1>
+            ComicCraft
+        </h1>
+
+        <p>
+            Turn a simple idea into a
+            five-panel comic story.
+        </p>
+
+    </section>
+
+
+    <section class="card">
+
+        <form
+            action="/generate"
+            method="post"
+        >
+
+            <!-- STORY PROMPT -->
+
+            <label>
+
+                Story Prompt
+
+                <textarea
+                    name="story_prompt"
+                    rows="5"
+                    required
+                    placeholder="A brave fox exploring an enchanted forest..."
+                ></textarea>
+
+            </label>
+
+
+            <div class="grid">
+
+                <!-- CHARACTER -->
+
+                <label>
+
+                    Main Character Name
+
+                    <input
+                        type="text"
+                        name="character_name"
+                        required
+                        placeholder="Luna"
+                    >
+
+                </label>
+
+
+                <!-- SETTING -->
+
+                <label>
+
+                    Setting
+
+                    <input
+                        type="text"
+                        name="setting"
+                        required
+                        placeholder="Enchanted forest"
+                    >
+
+                </label>
+
+
+                <!-- TONE -->
+
+                <label>
+
+                    Story Tone
+
+                    <select name="tone">
+
+                        <option>
+                            light-hearted
+                        </option>
+
+                        <option>
+                            dramatic
+                        </option>
+
+                        <option>
+                            poetic
+                        </option>
+
+                        <option>
+                            funny
+                        </option>
+
+                        <option>
+                            mysterious
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <!-- ART STYLE -->
+
+                <label>
+
+                    Art Style
+
+                    <select name="art_style">
+
+                        <option>
+                            comic book
+                        </option>
+
+                        <option>
+                            anime
+                        </option>
+
+                        <option>
+                            pixel art
+                        </option>
+
+                        <option>
+                            realistic
+                        </option>
+
+                        <option>
+                            watercolor
+                        </option>
+
+                    </select>
+
+                </label>
+
+            </div>
+
+
+            <button type="submit">
+
+                ✨ Generate My Comic
+
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <section class="info">
+
+        <div>
+
+            <strong>
+                5
+            </strong>
+
+            <span>
+                Panels
+            </span>
+
+        </div>
+
+
+        <div>
+
+            <strong>
+                AI
+            </strong>
+
+            <span>
+                Story + Images
+            </span>
+
+        </div>
+
+
+        <div>
+
+            <strong>
+                PDF
+            </strong>
+
+            <span>
+                Export
+            </span>
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+
+</html>
